@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<!-- HTML element -->
+
+<head>
+    <!-- Head section -->
+    <meta charset="utf-8">
+    <title>CSS Art - Simple House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .house {
+        width: 500px;
+        height: 421px;
+        background: black;
+        position: relative;
+    }
+
+
+    .window {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+        min-height: 85px;
+        top: 0;
+    }
+
+    .window .left-wind,
+    .window .right-wind {
+
+        width: 50%;
+        text-align: center;
+
+    }
+
+    .window .left-wind {
+        padding-right: 2rem;
+    }
+
+    .window .right-wind {
+        padding-left: 2rem;
+    }
+
+
+    .window .left-wind .box,
+    .window .right-wind .box {
+
+        width: 40px;
+        height: 40px;
+        background-color: #000000;
+        margin: 2px;
+        display: inline-block;
+    }
+
+    .roof {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 240px solid transparent;
+        border-right: 240px solid transparent;
+        border-bottom: 172px solid #E79636;
+        left: 10px;
+        top: 21px;
+    }
+
+    .wall {
+        position: absolute;
+        width: 370px;
+        height: 200px;
+        background: #E79636;
+        left: 65px;
+        top: 193px;
+    }
+
+    .door {
+        position: absolute;
+        width: 86px;
+        height: 114px;
+        background: #CA6C30;
+        left: 207px;
+        top: 279px;
+    }
+
+    .door-knob {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: black;
+        left: 217px;
+        top: 328px;
+    }
+</style>
+
+<body>
+    <!-- Body section -->
+
+    <!-- CSS art code here -->
+    <div class="house">
+        <div class="roof"></div>
+
+        <div class="wall">
+            <div class="window">
+                <div class="left-wind">
+                    <div>
+                        <div class="box"> </div>
+                        <div class="box"> </div>
+                    </div>
+                    <div>
+                        <div class="box"> </div>
+                        <div class="box"> </div>
+                    </div>
+                </div>
+                <div class="right-wind">
+                    <div>
+                        <div class="box"> </div>
+                        <div class="box"> </div>
+                    </div>
+                    <div>
+                        <div class="box"> </div>
+                        <div class="box"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="door"></div>
+        <div class="door-knob"></div>
+    </div>
+
+</body>
+
+</html>
